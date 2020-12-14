@@ -18,9 +18,8 @@ Route::get('/', HomeController::class);
 
 Route::get('cursos', [CursoController::class, 'index']);
 
-
 Route::get('cursos/create', [CursoController::class, 'create']);
 
-Route::get('cursos/{curso}', [CursoController::class, 'inf']);
+Route::get('cursos/{curso}', [CursoController::class, 'mostrar']);
 
 
